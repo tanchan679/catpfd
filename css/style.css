@@ -79,6 +79,10 @@ a {
     border-radius: 72px;
     margin-left: 165px;
     padding-left: 25px;
+
+}
+.input_submit:hover{
+    background:#30bcda;
 }
 .bottom-row3_item{
     height: auto;
@@ -160,6 +164,9 @@ a {
     margin-top: 15px;
     font-size: 15px;
     font-weight: 700;
+}
+.middle-row2-title:hover{
+    color: #555;
 }
 .col-3 .middle-row2-box-text a{
     text-decoration: none;
@@ -288,18 +295,17 @@ a {
 .navbar-menu{
     float: right;
 }
-.navbar-selectcategoris{
-    float: left;
-}
-.navbar-menu  span, .navbar-selectcategoris span{
+
+.navbar-menu span{
     color: #fff;
     margin-left: 35px;
     font-weight: 600;
     font-size: 15px;
 }
-.navbar-selectcategoris span{
-    margin-left: 7px;
+.navbar-menu span:hover{
+    color: #ddd;
 }
+
 .header-navbar .navbar-menu a,.header-navbar .navbar-selectcategoris a{
     text-decoration: none;
 }
@@ -339,6 +345,11 @@ a {
     top: 50%;
     left: 12px;
     transform: translate(0,-39%);
+    color: #e3e3e3;
+    font-size: 13px;
+    font-weight: 500;
+}
+.contact-item-boxtext p:nth-child(2) a{
     color: #e3e3e3;
     font-size: 13px;
     font-weight: 500;
@@ -474,6 +485,10 @@ a {
     position: relative;
     left: -150px;
     top: -200px;
+    background: none;
+}
+.carousel-indicators .active{
+    background: none;
 }
 .carousel-intro-line p:nth-child(1){
     color: #000;
@@ -502,11 +517,8 @@ a {
 .carousel-control-next .prev-icon{
     margin-left: 140px;
 }
-.header-banner-right{
-    text-align: right;
-}
 .header-banner-right-item{
-    margin-left: 25px;
+    margin-left: 10px;
 }
 .cout-cart{
     background: #000;
@@ -542,11 +554,14 @@ a {
     left: 160px;
     z-index: 10;
     border-right: solid #ebebeb 1px;
+    color: #555;
+    font-weight: 500;
+    font-size: 14px;
 }
 .search-form{
     position: relative;
-    top:-100px;
-    left: -120px;
+    left: 0px;
+
 }
 .search-form input:nth-child(2){
     height: 40px;
@@ -554,6 +569,10 @@ a {
     border-radius: 40px;
     border: solid #ebebeb 2px;
     z-index: 0;
+    padding-left: 160px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
 }
 .search-form button:nth-child(3){
     height: 40px;
@@ -567,9 +586,72 @@ a {
     top: 28px;
     right: 0px;
 }
+.search-form button:nth-child(3):hover{
+    background: #30bcda;
+}
 .search-form button:nth-child(3) i{
     position: absolute;
     top:15px;
     right: 20px;
     color: #ffffff;
+}
+
+
+
+.dropdown{
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+}
+.dropdown .noidung_dropdown a{
+    text-decoration: none;
+    padding-left: 15px;
+}
+.dropdown .noidung_dropdown a:hover{
+    color: #000;
+}
+.nut_dropdown {
+    height: 20px;
+    background-color: #0ca8c9;
+    color: white;
+    border: none;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.noidung_dropdown {
+    display: none;
+    position: absolute;
+    top:50px;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.header-banner-right-item .noidung_dropdown{
+    position: absolute;
+    top:70px;
+}
+.noidung_dropdown a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+}
+.noidung_dropdown a:hover {background-color: #ddd;}
+
+.dropdown:hover .noidung_dropdown {display: block;}
+
+.dropdown button{
+    background: none;
+    border: none;
+}
+.input_enteremail:focus, .contact-item-right select:focus,.search-form select:focus,.header-banner-right-item button:focus, .header-banner-right-item input:focus{
+    outline:0;
+}
+.carousel-item img{
+    width: 100%;
+    height: 750px;
 }

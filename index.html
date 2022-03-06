@@ -2,10 +2,12 @@
 <html lang="vn">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <title>CẮT HTML BY TUICOCACH.COM</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <div class="header">
@@ -26,7 +28,7 @@
                 </div>
                 <div class="contact-item-boxtext">
                     <p>Email Us</p>
-                    <p>admin@medyplus.com</p>
+                    <p><a href="mailto:admin@medyplus.com">admin@medyplus.com</a></p>
                 </div>
             </div>
             <div class="contact-item">
@@ -35,7 +37,7 @@
                 </div>
                 <div class="contact-item-boxtext">
                     <p>Call Us Now</p>
-                    <p>002 - 0100 843 1112</p>
+                    <p><a href="tel:00201008431112">002 - 0100 843 1112</a></p>
                 </div>
             </div>
             <div class="contact-item-right">
@@ -56,11 +58,27 @@
                 <div class="col-9 header-banner-right">
                     <div style="float: right">
                         <span class="header-banner-right-item">
-                        <img src="img/iconsetting.png">
+                            <div class="dropdown">
+                                <button class="nut_dropdown"> <img src="img/iconsetting.png" style="margin-top: -5px"></button>
+                                <div class="noidung_dropdown">
+                                    <a href="https://lazada.com">SETTING 1</a>
+                                    <a href="#">SETTING 2</a>
+                                    <a href="#">SETTING 3</a>
+                                    <a href="#">SETTING 4</a>
+                                </div>
+                            </div>
                         </span>
-                            <span class="header-banner-right-item">
-                            <img src="img/iconcart.png">
-                            <span class="cout-cart">2</span>
+                        <span class="header-banner-right-item">
+                            <div class="dropdown">
+                                <button class="nut_dropdown"> <img src="img/iconcart.png" style="margin-top: -5px">
+                            <span class="cout-cart">2</span></button>
+                                <div class="noidung_dropdown">
+                                    <a href="https://sonzim.com">HMM 1</a>
+                                    <a href="#">HMM 2</a>
+                                    <a href="#">HMM 3</a>
+                                    <a href="#">HMM 4</a>
+                                </div>
+                            </div>
                         </span>
                     </div>
                     <div style="float: right; text-align: right">
@@ -72,7 +90,7 @@
                                     <option>Categories 2</option>
                                     <option>Categories 3</option>
                                 </select>
-                                <input type="text" name="keysearch">
+                                <input type="text" name="keysearch" placeholder="Search for Product...">
                                 <button>
                                     <i class="fa-solid fa-magnifying-glass"></i>
                                 </button>
@@ -85,9 +103,14 @@
     </div>
     <div class="header-navbar">
         <div class="container">
-            <div class="navbar-selectcategoris">
-                <img src="img/iconmenu.png" alt="hehe">
-                <a href="#"><span>CATEGORIES</span></a>
+            <div class="dropdown">
+                <button class="nut_dropdown">  <img src="img/iconmenu.png" alt="hehe"></button>CATEGORIES
+                <div class="noidung_dropdown">
+                    <a href="https://tuicocach.com">CATEGORI 1</a>
+                    <a href="#">CATEGORI 2</a>
+                    <a href="#">CATEGORI 3</a>
+                    <a href="#">CATEGORI 4</a>
+                </div>
             </div>
             <div class="navbar-menu">
                 <a href="#"><span>HOME</span></a>
@@ -103,15 +126,15 @@
 
 <main class="middle">
     <div class="middle-row1">
-        <div class="greeting">
 
+        <div class="greeting">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <div class="carousel-intro-line">
                         <p>Find Any <span>Medicine</span> You Need!</p>
                         <p>Free standard Shipping Everyday</p>
-                        <p>Shop Now
-                            <div style="width: 70px; height: 2px; background: #0ca8c9; margin-top: -12px; margin-left: 5px"></div>
+                        <p><a href="#" style="color: #000; text-decoration: none">Shop Now</a>
+                        <div style="width: 70px; height: 2px; background: #0ca8c9; margin-top: -12px; margin-left: 5px"></div>
                         </p>
                     </div>
                  
@@ -119,6 +142,13 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img class="d-block w-100" src="./img/slide1.jpg" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img  class="d-block w-10" src="https://truongcaodangyduocpasteur.edu.vn/wp-content/uploads/2019/12/duoc-si-c%C4%91-e1575188481877.jpg">
+                    </div>
+                    <!--Slide 3-->
+                    <div class="carousel-item">
+                        <img  class="d-block w-10" src="https://jobsgo.vn/blog/wp-content/uploads/2020/05/hoc-duoc-si-ra-lam-gi-1280x720.jpg">
                     </div>
                 </div>
 
@@ -242,7 +272,7 @@
                     <i class="fa-solid fa-chevron-right"></i>
                 </span>
             </p>
-            <div class="row">
+            <div class="row top-selling">
                 <div class="col-3">
                     <div class="middle-row2-box-img">
                         <a href="#"><img src="img/anhso4.jpg" class="middle-row2-img"></a>
