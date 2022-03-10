@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="vn">
 <head>
@@ -8,6 +11,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/myJs.js"></script>
 </head>
 <body>
 <div class="header">
@@ -18,8 +22,8 @@
                     <img src="img/location.png" alt="hí hí">
                 </div>
                 <div class="contact-item-boxtext">
-                    <p>Find Us</p>
-                    <p>325 admiral unit, North cost, USA</p>
+                    <h3>Find Us</h3>
+                    <p> <a href="https://goo.gl/maps/Ww3CvV5vrgPzmR8t5">325 admiral unit, North cost, USA</a></p>
                 </div>
             </div>
             <div class="contact-item">
@@ -27,7 +31,7 @@
                     <img src="img/mail.png" alt="hí hí">
                 </div>
                 <div class="contact-item-boxtext">
-                    <p>Email Us</p>
+                    <h3>Email Us</h3>
                     <p><a href="mailto:admin@medyplus.com">admin@medyplus.com</a></p>
                 </div>
             </div>
@@ -36,7 +40,7 @@
                     <img src="img/phone.png" alt="hí hí">
                 </div>
                 <div class="contact-item-boxtext">
-                    <p>Call Us Now</p>
+                    <h3>Call Us Now</h3>
                     <p><a href="tel:00201008431112">002 - 0100 843 1112</a></p>
                 </div>
             </div>
@@ -131,7 +135,7 @@
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <div class="carousel-intro-line">
-                        <p>Find Any <span>Medicine</span> You Need!</p>
+                        <h2>Find Any <span>Medicine</span> You Need!</h2>
                         <p>Free standard Shipping Everyday</p>
                         <p><a href="#" style="color: #000; text-decoration: none">Shop Now</a>
                         <div style="width: 70px; height: 2px; background: #0ca8c9; margin-top: -12px; margin-left: 5px"></div>
@@ -219,24 +223,27 @@
                 <div class="col-7">
                     <div class="grid-flex-left">
                         <img src="img/Untitled-4.png">
-                        <div class="box">
+                        <div class="boxx">
                             <div class="box-h65">
                                 <div class="squares-65">
-                                    <p class="box-h65-number">230</p>
+                                    <p class="box-h65-number" id="days">00</p>
                                     <p class="box-h65-text">DAYS</p>
                                 </div>
                                 <div class="squares-65">
-                                    <p class="box-h65-number">24</p>
+                                    <p class="box-h65-number" id="hrs">00</p>
                                     <p class="box-h65-text">HRS</p>
                                 </div>
                                 <div class="squares-65">
-                                    <p class="box-h65-number">40</p>
+                                    <p class="box-h65-number" id="mins">00</p>
                                     <p class="box-h65-text">MINS</p>
                                 </div>
                                 <div class="squares-65">
-                                    <p class="box-h65-number">60</p>
+                                    <p class="box-h65-number" id="sec">00</p>
                                     <p class="box-h65-text">SEC</p>
                                 </div>
+                                <script>
+                                    countdownToTheDesiredTime(2022,4,10,0,0,0);//countdownToTheDesiredTime(year,month,days, hour, minute,second)
+                                </script>
                             </div>
                             <p class="grid-flex-left-title">BEAUTY & COSMETICS</p>
                             <p class="grid-flex-left-sale">Sale up to <span>40%</span> off</p>
@@ -246,18 +253,18 @@
                 <div class="col-5">
                     <div class="grid-flex-right">
                         <div class="grid-flex-right-item">
-                            <div class="box">
-                                <p>30%</p>
-                                <p>DISCOUNT</p>
+                            <div class="boxx">
+                                <h3>30%</h3>
+                                <H3>DISCOUNT</H3>
                                 <p>For dietary Supplement</p>
                             </div>
                             <img src="./img/vienthuocprovip2.png">
                         </div>
                         <div class="grid-flex-space-row"></div>
                         <div class="grid-flex-right-item">
-                            <div class="box">
-                                <p></p>
-                                <p>ACCESSORIES</p>
+                            <div class="boxx">
+                                <h3></h3>
+                                <H3>ACCESSORIES</H3>
                                 <p>Sale up to <span>20%</span> off</p>
                             </div>
                             <img src="./img/vienthuocprovip1.png">
@@ -265,95 +272,187 @@
                     </div>
                 </div>
             </div>
-            <p class="top-selling-tittle"><span>PRODUCTS</span>
-                <span>TOP SELLING</span>
-                <span style="float: right; margin-top: 20px">
-                    <i class="fa-solid fa-chevron-left" style="color: #cfcfcf; margin-right:15px; "></i>
-                    <i class="fa-solid fa-chevron-right"></i>
-                </span>
-            </p>
-            <div class="row top-selling">
-                <div class="col-3">
-                    <div class="middle-row2-box-img">
-                        <a href="#"><img src="img/anhso4.jpg" class="middle-row2-img"></a>
+            <div class="review">
+                    <div class="header-content">
+                        <div class="title">
+                            <h2>PRODUCTS</h2>
+                            <h3>TOP SELLING</h3>
+                        </div>
+                        <div class="nav">
+                            <i class="fa-solid fa-chevron-left btnLeft" style="color: #cfcfcf; margin-right:15px; "></i>
+                            <i class="fa-solid fa-chevron-right btnRight"></i>
+                        </div>
                     </div>
-                    <div class="middle-row2-box-text">
-                        <a href="#"> <p class="middle-row2-title">Nature's Bounty Biotin 10000 MCG</p></a>
-                        <p class="middle-row2-price">$30.00</p>
+                    <div class="review-box">
+                        <div class="box">
+                            <div class="row top-selling">
+                                <div class="col-3">
+                                    <div class="middle-row2-box-img">
+                                        <a href="#"><img src="img/anhso4.jpg" class="middle-row2-img"></a>
+                                    </div>
+                                    <div class="middle-row2-box-text">
+                                        <a href="#"> <p class="middle-row2-title">Nature's Bounty Biotin 10000 MCG</p></a>
+                                        <p class="middle-row2-price">$30.00</p>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="middle-row2-box-img">
+                                        <a href="#"><img src="img/tt1.png" class="middle-row2-img"></a>
+                                    </div>
+                                    <div class="middle-row2-box-text">
+                                        <a href="#"> <p class="middle-row2-title">Nature's Bounty Biotin 10000 MCG</p></a>
+                                        <p class="middle-row2-price">$30.00</p>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="middle-row2-box-img">
+                                        <a href="#"><img src="img/tt2.png" class="middle-row2-img"></a>
+                                    </div>
+                                    <div class="middle-row2-box-text">
+                                        <a href="#"> <p class="middle-row2-title">Nature's Bounty Biotin 10000 MCG</p></a>
+                                        <p class="middle-row2-price">$30.00</p>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="middle-row2-box-img">
+                                        <a href="#"><img src="img/tt3.png" class="middle-row2-img"></a>
+                                    </div>
+                                    <div class="middle-row2-box-text">
+                                        <a href="#"> <p class="middle-row2-title">Nature's Bounty Biotin 10000 MCG</p></a>
+                                        <p class="middle-row2-price">$30.00</p>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="middle-row2-box-img">
+                                        <a href="#"><img src="img/tt4.png" class="middle-row2-img"></a>
+                                    </div>
+                                    <div class="middle-row2-box-text">
+                                        <a href="#"> <p class="middle-row2-title">Nature's Bounty Biotin 10000 MCG</p></a>
+                                        <p class="middle-row2-price">$30.00</p>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="middle-row2-box-img">
+                                        <a href="#"><img src="img/tt5.png" class="middle-row2-img"></a>
+                                    </div>
+                                    <div class="middle-row2-box-text">
+                                        <a href="#"> <p class="middle-row2-title">Nature's Bounty Biotin 10000 MCG</p></a>
+                                        <p class="middle-row2-price">$30.00</p>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="middle-row2-box-img">
+                                        <a href="#"><img src="img/tt6.png" class="middle-row2-img"></a>
+                                    </div>
+                                    <div class="middle-row2-box-text">
+                                        <a href="#"> <p class="middle-row2-title">Nature's Bounty Biotin 10000 MCG</p></a>
+                                        <p class="middle-row2-price">$30.00</p>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="middle-row2-box-img">
+                                        <a href="#"><img src="img/tt7.png" class="middle-row2-img"></a>
+                                    </div>
+                                    <div class="middle-row2-box-text">
+                                        <a href="#"> <p class="middle-row2-title">Nature's Bounty Biotin 10000 MCG</p></a>
+                                        <p class="middle-row2-price">$30.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end box -->
+                        <div class="box">
+                            <div class="row top-selling">
+                                <div class="col-3">
+                                    <div class="middle-row2-box-img">
+                                        <a href="#"><img src="https://icdn.dantri.com.vn/thumb_w/640/2017/1-1510967806416.jpg" class="middle-row2-img"></a>
+                                    </div>
+                                    <div class="middle-row2-box-text">
+                                        <a href="#"> <p class="middle-row2-title">Nature's Bounty Biotin 10000 MCG</p></a>
+                                        <p class="middle-row2-price">$30.00</p>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="middle-row2-box-img">
+                                        <a href="#"><img src="https://cdn.tgdd.vn/Files/2019/07/25/1181745/chup-anh-hieu-ung-bokeh-la-gi-cach-chup-anh-bokeh-don-gian-bang-may-anh--2.jpg" class="middle-row2-img"></a>
+                                    </div>
+                                    <div class="middle-row2-box-text">
+                                        <a href="#"> <p class="middle-row2-title">Nature's Bounty Biotin 10000 MCG</p></a>
+                                        <p class="middle-row2-price">$30.00</p>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="middle-row2-box-img">
+                                        <a href="#"><img src="https://vcdn-dulich.vnecdn.net/2021/12/24/An-Giang-0-jpeg-1470-1640315739.jpg" class="middle-row2-img"></a>
+                                    </div>
+                                    <div class="middle-row2-box-text">
+                                        <a href="#"> <p class="middle-row2-title">Nature's Bounty Biotin 10000 MCG</p></a>
+                                        <p class="middle-row2-price">$30.00</p>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="middle-row2-box-img">
+                                        <a href="#"><img src="https://vcdn-dulich.vnecdn.net/2021/12/24/An-Giang-0-jpeg-1470-1640315739.jpg" class="middle-row2-img"></a>
+                                    </div>
+                                    <div class="middle-row2-box-text">
+                                        <a href="#"> <p class="middle-row2-title">Nature's Bounty Biotin 10000 MCG</p></a>
+                                        <p class="middle-row2-price">$30.00</p>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="middle-row2-box-img">
+                                        <a href="#"><img src="https://vcdn-dulich.vnecdn.net/2021/12/24/An-Giang-0-jpeg-1470-1640315739.jpg" class="middle-row2-img"></a>
+                                    </div>
+                                    <div class="middle-row2-box-text">
+                                        <a href="#"> <p class="middle-row2-title">Nature's Bounty Biotin 10000 MCG</p></a>
+                                        <p class="middle-row2-price">$30.00</p>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="middle-row2-box-img">
+                                        <a href="#"><img src="https://vcdn-dulich.vnecdn.net/2021/12/24/An-Giang-0-jpeg-1470-1640315739.jpg" class="middle-row2-img"></a>
+                                    </div>
+                                    <div class="middle-row2-box-text">
+                                        <a href="#"> <p class="middle-row2-title">Nature's Bounty Biotin 10000 MCG</p></a>
+                                        <p class="middle-row2-price">$30.00</p>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="middle-row2-box-img">
+                                        <a href="#"><img src="https://vcdn-dulich.vnecdn.net/2021/12/24/An-Giang-0-jpeg-1470-1640315739.jpg" class="middle-row2-img"></a>
+                                    </div>
+                                    <div class="middle-row2-box-text">
+                                        <a href="#"> <p class="middle-row2-title">Nature's Bounty Biotin 10000 MCG</p></a>
+                                        <p class="middle-row2-price">$30.00</p>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="middle-row2-box-img">
+                                        <a href="#"><img src="https://vcdn-dulich.vnecdn.net/2021/12/24/An-Giang-0-jpeg-1470-1640315739.jpg" class="middle-row2-img"></a>
+                                    </div>
+                                    <div class="middle-row2-box-text">
+                                        <a href="#"> <p class="middle-row2-title">Nature's Bounty Biotin 10000 MCG</p></a>
+                                        <p class="middle-row2-price">$30.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end box -->
+                        <div class="box">
+                                3
+                        </div>
+                        <!-- end box -->
                     </div>
                 </div>
-                <div class="col-3">
-                    <div class="middle-row2-box-img">
-                        <a href="#"><img src="img/tt1.png" class="middle-row2-img"></a>
-                    </div>
-                    <div class="middle-row2-box-text">
-                        <a href="#"> <p class="middle-row2-title">Nature's Bounty Biotin 10000 MCG</p></a>
-                        <p class="middle-row2-price">$30.00</p>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="middle-row2-box-img">
-                        <a href="#"><img src="img/tt2.png" class="middle-row2-img"></a>
-                    </div>
-                    <div class="middle-row2-box-text">
-                        <a href="#"> <p class="middle-row2-title">Nature's Bounty Biotin 10000 MCG</p></a>
-                        <p class="middle-row2-price">$30.00</p>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="middle-row2-box-img">
-                        <a href="#"><img src="img/tt3.png" class="middle-row2-img"></a>
-                    </div>
-                    <div class="middle-row2-box-text">
-                        <a href="#"> <p class="middle-row2-title">Nature's Bounty Biotin 10000 MCG</p></a>
-                        <p class="middle-row2-price">$30.00</p>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="middle-row2-box-img">
-                        <a href="#"><img src="img/tt4.png" class="middle-row2-img"></a>
-                    </div>
-                    <div class="middle-row2-box-text">
-                        <a href="#"> <p class="middle-row2-title">Nature's Bounty Biotin 10000 MCG</p></a>
-                        <p class="middle-row2-price">$30.00</p>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="middle-row2-box-img">
-                        <a href="#"><img src="img/tt5.png" class="middle-row2-img"></a>
-                    </div>
-                    <div class="middle-row2-box-text">
-                        <a href="#"> <p class="middle-row2-title">Nature's Bounty Biotin 10000 MCG</p></a>
-                        <p class="middle-row2-price">$30.00</p>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="middle-row2-box-img">
-                        <a href="#"><img src="img/tt6.png" class="middle-row2-img"></a>
-                    </div>
-                    <div class="middle-row2-box-text">
-                        <a href="#"> <p class="middle-row2-title">Nature's Bounty Biotin 10000 MCG</p></a>
-                        <p class="middle-row2-price">$30.00</p>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="middle-row2-box-img">
-                        <a href="#"><img src="img/tt7.png" class="middle-row2-img"></a>
-                    </div>
-                    <div class="middle-row2-box-text">
-                        <a href="#"> <p class="middle-row2-title">Nature's Bounty Biotin 10000 MCG</p></a>
-                        <p class="middle-row2-price">$30.00</p>
-                    </div>
-                </div>
-            </div>
+                <script src="js/review-box.js"></script>
         </div>
     </div>
     <div class="middle-row3">
         <div class="container">
-            <p class="lastest-news-title">
-                <span>HOT NEWS</span>
-                <span>LATEST NEWS</span>
-            </p>
+            <div class="lastest-news-title">
+                <h2>HOT NEWS</h2>
+                <h3>LATEST NEWS</h3>
+            </div>
             <div class="row">
                 <div class="col-4">
                     <img src="./img/anhso1.jpg" alt="anh so 1" class="img-latest-news">
@@ -378,7 +477,7 @@
 <footer class="footer">
     <div class="bottom-row1">
         <div class="container" style="text-align: center">
-            <p style="font-size: 30px; color: white">Keep Updated & Get Unlimited Discount</p>
+            <h3 style="font-size: 30px; color: white">Keep Updated & Get Unlimited Discount</h3>
             <p style="color: #c6c6c6">Sing up for our newsletter to receive updates and exclusive offers</p>
             <form action="" method="post" style="margin-top: 60px">
                 <input type="text" class="input_enteremail" placeholder="Enter your email address here">
@@ -399,13 +498,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-3">
-                    <p class="bottom-row3_item_title">CONTACT US</p>
+                    <h3 class="bottom-row3_item_title">CONTACT US</h3>
                     <p><i class="fa-solid fa-location-dot"></i> <span>Lorem Ipsum has been the indus-try's standard</span></p>
                     <p><i class="fa-solid fa-envelope"></i> <span>contact@medic.com</span></p>
                     <p><i class="fa-solid fa-mobile-screen-button"></i> <span>+84(1)234567891</span></p>
                 </div>
                 <div class="col-3">
-                    <p class="bottom-row3_item_title">COMPANY</p>
+                    <h3 class="bottom-row3_item_title">COMPANY</h3>
                     <ul>
                         <li><a href="#" >About Us</a> </li>
                         <li><a href="#">Team Member</a> </li>
@@ -415,7 +514,7 @@
                     </ul>
                 </div>
                 <div class="col-3">
-                    <p class="bottom-row3_item_title">CATEGORYES</p>
+                    <h3 class="bottom-row3_item_title">CATEGORYES</h3>
                     <ul>
                         <li><a href="#" >Home medicine</a> </li>
                         <li><a href="#">Baby & Child</a> </li>
@@ -425,7 +524,7 @@
                     </ul>
                 </div>
                 <div class="col-3">
-                    <p class="bottom-row3_item_title">QUICK LINK</p>
+                    <h3 class="bottom-row3_item_title">QUICK LINK</h3>
                     <ul>
                         <li><a href="#" >My Account</a> </li>
                         <li><a href="#">Store Location</a> </li>
@@ -451,3 +550,4 @@
 </footer>
 </body>
 </html>
+
