@@ -1,0 +1,253 @@
+
+@media all and (min-width: 320px) and (max-width: 424px){
+    .input_enteremail{
+        height: 52px;
+    }
+    .input_submit{
+        top:4px;
+        height: 44px;
+    }
+    .prev-icon-right{
+        border: none;
+        border-bottom: 40px solid #fff;
+        border-right: 0px solid transparent;
+        border-left: 10px solid transparent;
+        height: 0;
+        width: 40px;
+        line-height: 40px;
+    }
+    .prev-icon-left{
+        border: none;
+        border-bottom: 40px solid #fff;
+        border-left: 0px solid transparent;
+        border-right: 10px solid transparent;
+        height: 0;
+        width: 40px;
+        line-height: 40px;
+    }
+    .prev-icon-left:hover,.prev-icon-right:hover{
+        border-bottom: 40px solid #0ca8c9;
+    }
+    .fa-angle-right,.fa-angle-left{
+        font-size: 14px;
+    }
+    .carousel-indicators{
+        top: 0%;
+    }
+}
+@media all and (min-width: 425px) and (max-width: 575px) {
+    .input_enteremail{
+        height: 52px;
+    }
+    .input_submit{
+        top:4px;
+        height: 44px;
+    }
+    .prev-icon-right{
+        border: none;
+        border-bottom: 40px solid #fff;
+        border-right: 0px solid transparent;
+        border-left: 10px solid transparent;
+        height: 0;
+        width: 40px;
+        line-height: 40px;
+    }
+    .prev-icon-left{
+        border: none;
+        border-bottom: 40px solid #fff;
+        border-left: 0px solid transparent;
+        border-right: 10px solid transparent;
+        height: 0;
+        width: 40px;
+        line-height: 40px;
+    }
+    .prev-icon-left:hover,.prev-icon-right:hover{
+        border-bottom: 40px solid #0ca8c9;
+    }
+    .fa-angle-right,.fa-angle-left{
+        font-size: 14px;
+    }
+    .carousel-indicators{
+        top: 0%;
+    }
+}
+@media all and (min-width: 576px) and (max-width: 767px) {
+    .input_enteremail{
+        height: 52px;
+    }
+    .input_submit{
+        top:4px;
+        height: 44px;
+    }
+    .prev-icon-right{
+        border: none;
+        border-bottom: 50px solid #fff;
+        border-right: 0px solid transparent;
+        border-left: 10px solid transparent;
+        height: 0;
+        width: 50px;
+        line-height: 50px;
+    }
+    .prev-icon-left{
+        border: none;
+        border-bottom: 50px solid #fff;
+        border-left: 0px solid transparent;
+        border-right: 10px solid transparent;
+        height: 0;
+        width: 50px;
+        line-height: 50px;
+    }
+    .prev-icon-left:hover,.prev-icon-right:hover{
+        border-bottom: 50px solid #0ca8c9;
+    }
+    .fa-angle-right,.fa-angle-left{
+        font-size: 16px;
+    }
+    .carousel-indicators{
+        top: 0%;
+    }
+}
+@media all and (min-width: 768px) and (max-width: 991px){
+    .input_enteremail{
+        height: 52px;
+    }
+    .input_submit{
+        top:4px;
+        height: 44px;
+    }
+    .prev-icon-right{
+        border: none;
+        border-bottom: 55px solid #fff;
+        border-right: 0px solid transparent;
+        border-left: 10px solid transparent;
+        height: 0;
+        width: 55px;
+        line-height: 55px;
+    }
+    .prev-icon-left{
+        border: none;
+        border-bottom: 55px solid #fff;
+        border-left: 0px solid transparent;
+        border-right: 10px solid transparent;
+        height: 0;
+        width: 55px;
+        line-height: 55px;
+    }
+    .prev-icon-left:hover,.prev-icon-right:hover{
+        border-bottom: 55px solid #0ca8c9;
+    }
+    .fa-angle-right,.fa-angle-left{
+        font-size: 17px;
+    }
+    .carousel-indicators{
+        top: 20%;
+    }
+}
+@media all and (min-width: 992px) and (max-width: 1199px) {
+    .input_enteremail{
+        height: 62px;
+    }
+    .input_submit{
+        top:5px;
+        height: 52px;
+    }
+    .prev-icon-right{
+        border: none;
+        border-bottom: 55px solid #fff;
+        border-right: 0px solid transparent;
+        border-left: 10px solid transparent;
+        height: 0;
+        width: 55px;
+        line-height: 55px;
+    }
+    .prev-icon-left{
+        border: none;
+        border-bottom: 55px solid #fff;
+        border-left: 0px solid transparent;
+        border-right: 10px solid transparent;
+        height: 0;
+        width: 55px;
+        line-height: 55px;
+    }
+    .prev-icon-left:hover,.prev-icon-right:hover{
+        border-bottom: 55px solid #0ca8c9;
+    }
+    .fa-angle-right,.fa-angle-left{
+        font-size: 17px;
+    }
+    .carousel-indicators{
+        top: 20%;
+    }
+}
+@media all and (min-width: 1200px) and (max-width: 1289px){
+    .input_enteremail{
+        height: 72px;
+    }
+    .input_submit{
+        top:7px;
+        height: 60px;
+    }
+    .prev-icon-right{
+        border: none;
+        border-bottom: 62px solid #fff;
+        border-right: 0px solid transparent;
+        border-left: 10px solid transparent;
+        height: 0;
+        width: 62px;
+        line-height: 62px;
+    }
+    .prev-icon-left{
+        border: none;
+        border-bottom: 62px solid #fff;
+        border-left: 0px solid transparent;
+        border-right: 10px solid transparent;
+        height: 0;
+        width: 62px;
+        line-height: 62px;
+    }
+    .prev-icon-left:hover,.prev-icon-right:hover{
+        border-bottom: 62px solid #0ca8c9;
+    }
+    .fa-angle-right,.fa-angle-left{
+        font-size: 20px;
+    }
+    .carousel-indicators{
+        top: 20%;
+    }
+}
+@media all and (min-width: 1290px){
+    .input_enteremail{
+        height: 72px;
+    }
+    .input_submit{
+        top:7px;
+        height: 60px;
+    }
+    .prev-icon-right{
+        border: none;
+        border-bottom: 62px solid #fff;
+        border-right: 0px solid transparent;
+        border-left: 10px solid transparent;
+        height: 0;
+        width: 62px;
+        line-height: 62px;
+    }
+    .prev-icon-left{
+        border: none;
+        border-bottom: 62px solid #fff;
+        border-left: 0px solid transparent;
+        border-right: 10px solid transparent;
+        height: 0;
+        width: 62px;
+        line-height: 62px;
+    }
+    .prev-icon-left:hover,.prev-icon-right:hover{
+        border-bottom: 62px solid #0ca8c9;
+    }
+    .fa-angle-right,.fa-angle-left{
+        font-size: 20px;
+    }
+    .carousel-indicators{
+        top: 20%;
+    }
+}

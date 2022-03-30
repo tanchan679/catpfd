@@ -17,16 +17,15 @@ function countdownToTheDesiredTime(year,month,days, hour, minute,second){
         }
     }, 1000);
 }
-
-
 function responsive(){
-    $('.carousel-item img').height($('.carousel-item img').width()*0.390);
     $('.middle-row2-box-img').height($('.middle-row2-box-img').width());
-    $('.middle-row2-img').height($('.middle-row2-img').width());
-    $('.grid-flex').height($('.grid-flex').width()*0.45);
+    $('.grid-flex').height($('.grid-flex').width()*0.440);
+
     if($(window).width() < 450){
         $('.grid-flex-left-title').css({"font-size":"14px"});
         $('.grid-flex-left-sale').css({"font-size":"10px"});
+        $('.container').css("padding","0px 10px");
+        $('.carousel-intro-line').css("padding","0px 10px");
         $('.grid-flex').height($('.grid-flex').width()*1.7);
         $('.grid-flex-right').css("margin-top","20px");
         $('.grid-flex-right-item .boxx h3:nth-child(1)').css({"font-size":"35px","line-height":"35px"});
@@ -35,11 +34,12 @@ function responsive(){
         $('.carousel-intro-line h2:nth-child(1)').css({"font-size":"21px","line-height":"24px"});
     }
     else if($(window).width() < 767){
+        $('.container').css("padding","0px 10px");
+        $('.carousel-intro-line').css("padding","0px 10px");
         $('.grid-flex-right-item .boxx h3:nth-child(1)').css({"font-size":"65px","line-height":"65px"});
         $('.grid-flex-right-item .boxx h3:nth-child(2)').css({"font-size":"30px","line-height":"30px"});
         $('.grid-flex-right-item .boxx p:nth-child(3)').css({"font-size":"18px","line-height":"18px"});
         $('.img-Donors').height(50);
-     //   $('.header-navbar').css("line-height","25px");
         $('.grid-flex-left-title').css({"font-size":"22px","margin-top":"5px"});
         $('.grid-flex-left-sale').css({"font-size":"12px"});
         $('.grid-flex').height($('.grid-flex').width()*1.7);
@@ -50,7 +50,8 @@ function responsive(){
         $('.grid-flex-right-item .boxx h3:nth-child(2)').css({"font-size":"20px","line-height":"20px"});
         $('.grid-flex-right-item .boxx p:nth-child(3)').css({"font-size":"14px","line-height":"14px"});
         $('.img-Donors').height(80);
-   //     $('.header-navbar').css("line-height","50px");
+        $('.container').css("padding","0px 10px");
+        $('.carousel-intro-line').css("padding","0px 10px");
         $('.grid-flex-right').css("margin-top","0px")
         $('.grid-flex-left-title').css({"font-size":"20px","margin-top":"0px"});
         $('.grid-flex-left-sale').css({"font-size":"14px"});
@@ -61,7 +62,8 @@ function responsive(){
         $('.grid-flex-right-item .boxx h3:nth-child(1)').css({"font-size":"65px","line-height":"65px"});
         $('.grid-flex-right-item .boxx h3:nth-child(2)').css({"font-size":"30px","line-height":"30px"});
         $('.grid-flex-right-item .boxx p:nth-child(3)').css({"font-size":"18px","line-height":"18px"});
-        $('.container').css("margin","0px 10px");
+        $('.container').css("padding","0px 10px");
+        $('.carousel-intro-line').css("padding","0px 10px");
         $('.img-Donors').height(110);
         $('.contact-item-boxtext').css("display","block");
         $('.contact-item').css("width","265px");
@@ -69,25 +71,33 @@ function responsive(){
         $('.carousel-intro-line h2:nth-child(1)').css({"font-size":"55px","line-height":"63px"});
     }
     else{
-        $('.container').css("margin","0 auto");
-        $('.squares-65').width(65);
-        $('.squares-65').height(65);
+        $('.container').css("padding","0px 0px");
+        $('.carousel-intro-line').css("padding","0px 0px");
+        $('.squares-65').width(60);
+        $('.squares-65').height(60);
         $('.box-h65-number').css("font-size","21px");
         $('.box-h65-text').css("font-size","12px");
         $('.box-h65').css({"width":"300px","height":"65px"});
         $('.grid-flex-left-title').css({"font-size":"30px"});
         $('.grid-flex-left-sale').css({"font-size":"18px"});
-        $('.carousel-intro-line h2:nth-child(1)').css({"font-size":"70px","line-height":"85px"});
+        $('.carousel-intro-line h2:nth-child(1)').css({"font-size":"70px","line-height":"90px"});
     }
-    if($(window).width() < 950){
-        $('.contact-item-boxtext').css("display","none");
-        $('.contact-item').css("width","60px");
-    }
+
     if($(window).width() < 800){
         $('.navbar-menu').css("float","none");
     }else{
         $('.navbar-menu').css("float","right");
     }
+    if($(window).width() < 950){
+        $('.contact-item-boxtext').css("display","none");
+        $('.contact-item').css("width","60px");
+    }else{
+        $('.contact-item-boxtext').css("display","block");
+        $('.contact-item').css("width","265px");
+        $('.contact-item:nth-child(1)').css("width","260px");
+        $('.contact-item:nth-child(2)').css("width","205px");
+    }
+
     if($(window).width() < 625){
         $('.carousel-intro-line p:nth-child(3)').css("margin-top","5px");
         $('.carousel-intro-line p:nth-child(2)').css({"font-size":"14px","line-height":"14px","margin-top":"0px"});
@@ -124,5 +134,6 @@ function responsive(){
         $('.lastest-news-title > h3').css({"font-size":"23px","line-height":"23px","top":"-38px"});
         $('.bottom-row1-title').css({"font-size":"23px","line-height":"23px"});
     }
+
 }
 
