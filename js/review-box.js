@@ -2,7 +2,7 @@ const listBox = document.querySelectorAll('.box');
 const wrapperBox = document.querySelector('.review-box');
 const btnLeft = document.querySelector('.btnLeft');
 const btnRight = document.querySelector('.btnRight');
-const reviewDiv = document.querySelector('.review');
+const reviewDiv = document.querySelector('.container');
 document.addEventListener('DOMContentLoaded', function () {
     // responsive
     // const scrollbarWidth =
